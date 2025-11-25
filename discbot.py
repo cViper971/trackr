@@ -19,10 +19,12 @@ def load_commands():
     from commands.general import setup_general_commands
     from commands.brawl import setup_brawl_commands
     from commands.interntracking import setup_interntracking_commands
+    from commands.aivoice import setup_aivoice_commands
     
     setup_general_commands(tree, GUILD_ID)
     setup_brawl_commands(tree, GUILD_ID)
     setup_interntracking_commands(tree, GUILD_ID, INTERNSHIP_ROLE_NAME)
+    setup_aivoice_commands(tree,GUILD_ID)
 
 @client.event
 async def on_ready():
